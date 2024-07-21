@@ -1,0 +1,39 @@
+.intro {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .profileImage {
+    border-radius: 20%;
+  }
+  
+  .links a {
+    margin: 0 10px;
+    padding: 10px;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .links a:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .button:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  

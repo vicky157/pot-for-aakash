@@ -1,0 +1,84 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 120px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
+  }
+  
+  .contactForm, .contactInfo {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .contactForm form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contactForm input, .contactForm textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contactForm button {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    transition: background 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  
+  .contactForm button:hover {
+    background: rgba(152, 149, 149, 0.5);
+  }
+  
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contactInfo h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contactInfo p {
+    margin-bottom: 10px;
+  }
+  
+  .contactInfo .socialLinks {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .contactInfo .socialLinks a {
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .contactInfo .socialLinks a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #333;
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

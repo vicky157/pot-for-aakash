@@ -1,0 +1,64 @@
+.research {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 150px; /* Increase gap between panels */
+    padding: 20px;
+    width: 100%;
+    height: auto; /* Adjust height to auto to fit the content */
+  }
+  
+  .role, .coursework {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 60px; /* Increase padding for larger panels */
+    border-radius: 20px;
+    color: #333;
+    transition: transform 0.3s, background 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
+  }
+  
+  .role:hover, .coursework:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .role h2, .coursework h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+  
+  .role span, .coursework span {
+    font-style: italic;
+  }
+  
+  .role ul, .coursework ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+  }
+  
+  .role li, .coursework li {
+    margin-bottom: 10px;
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 1200px) {
+    .research {
+      grid-template-columns: 1fr;
+    }
+  }
+  
